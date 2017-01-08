@@ -54,13 +54,14 @@ int nvPositionFruit(Fruit *F, char niveau[HAUTEUR][LONGUEUR])
 // Affichage de l'aide
 void afficherAide()
 {
-    printf("Bienvenue dans SNAKE\nCette fenetre a pour but de vous expliquer les regles du jeu\n");
-    printf("Le but est de deplacer le serpent a l'aider des touches Z(haut), S(bas), Q(gauche), D(droite) afin de manger le plus de fruit possible.\n");
-    printf("La partie s'arrete si le serpent se heurte a un mur, un obstacle ou s'il se heurte lui-meme.\n");
-    printf("Dans le menu precedent il existe trois version du jeu, la premiere version est la version classique.\n");
-    printf("dans la seconde version, la vitesse du serpent augmente lorsque l'on passe au niveau supérieur.\n");
-    printf("Le joueur passe au niveau superieur tous les fruits manges\n");
-    printf("Enfin, dans la troisieme version le joueur possede des vies et le serpent se déplace à travers les murs.\n");
+    printf("Bienvenue dans SNAKE\n\n");
+    printf("Le but de ce jeu est de deplacer un serpent a l'aide des touches Z(haut), S(bas), Q(gauche), D(droite).\n");
+    printf("Lorsque le serpent mange un fruit, il grandit et augmente le score de 1 point.\n");
+    printf("La partie se termine lorsque le serpent rencontre un mur, un obstacle ou entre en collision avec lui-même\n");
+    printf("Il existe trois versions du jeu, le premier mode est le mode classique.\n");
+    printf("Dans le 2eme mode, le serpent avance tout seul. Vous ne faites que le diriger. La vitesse du serpent augmente lorsque l'on passe au niveau superieur.\n");
+    printf("Le joueur passe au niveau superieur une fois que tous les fruits ont ete manges.\n");
+    printf("Enfin, dans le 3eme mode de jeu, le joueur possede des vies et le serpent peut se déplacer à travers les murs.\n");
 
 }
 int sauvegarderScore(int *scoreFinal) // Sauvegarde le meilleur score dns un fichier.txt
